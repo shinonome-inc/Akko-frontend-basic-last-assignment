@@ -1,0 +1,50 @@
+@use "../../variables" as *;
+.btn {
+  color: $white;
+  font-family: $fontfamily-gothic;
+  font-size: $fontsize-s;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 0;
+  background: $black;
+  transition: all 0.2s ease;
+  left: 24px;
+  top: 24px;
+  padding: 0px 16px;
+  display: flex;
+  /*左寄せ横並び*/
+  flex-direction: row;
+  /*flexコンテナの中で左右の中央に配置*/
+  justify-content: center;
+  /*flexコンテナの中で上下の中央に配置*/
+  align-items: center;
+}
+.text {
+  color: $white;
+  /*下線なし*/
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: $orange_bistre;
+}
+.text:hover {
+  color: $white;
+}
+@media screen and (min-width: $breakpoint-sm) {
+  .btn {
+    width: 180px;
+    height: 45px;
+  }
+}
+@media screen and (min-width: $breakpoint-md) {
+  .btn {
+    width: 150px;
+    height: 55px;
+  }
+}
+@media screen and (min-width: $breakpoint-lg) {
+  .btn {
+    width: 200px;
+    height: 55px;
+  }
+}
