@@ -1,0 +1,10 @@
+@use "../../variables" as *;
+.message {
+  padding: 52px 20px;
+}
+.message-text {
+  font-family: $fontfamily-mincho;
+}
+.message-detail {
+  font-family: $fontfamily-gothic;
+}
