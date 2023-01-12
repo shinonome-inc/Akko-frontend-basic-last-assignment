@@ -1,0 +1,75 @@
+@use "../../variables" as *;
+.plan-wrap {
+  display: flex;
+  flex-direction: row;
+  .plan {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .plan-title {
+      height: 69px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #a19283;
+      color: $white;
+      font-size: $fontsize-l;
+      font-weight: 700;
+    }
+    .plan-price {
+      background-color: $gray_desertStorm;
+      height: 142px;
+      padding: 24px 0;
+      border: solid 1px $gray_gainsboro;
+      border-bottom: none;
+      .plan-price-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0 0 16px;
+        .price-yen {
+          font-size: $fontsize-l;
+          font-weight: 700;
+          line-height: 29px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 0;
+        }
+        .price-main {
+          font-size: $fontsize-xxl;
+          font-weight: 700;
+          margin-bottom: 0;
+        }
+      }
+      .price-sub {
+        font-size: $fontsize-s;
+        margin-bottom: 0;
+      }
+    }
+    .plan-list {
+      list-style: none;
+      padding-left: 0;
+      .plan-item {
+        height: 60px;
+        padding: 20px;
+        border: solid 1px $gray_gainsboro;
+        border-bottom: none;
+      }
+      .plan-item:last-child {
+        border-bottom: solid 1px $gray_gainsboro;
+      }
+    }
+  }
+  .plan:nth-child(even) {
+    box-sizing: border-box;
+    border: solid 5px $orange_bistre;
+    .plan-title {
+      background-color: $orange_bistre;
+      box-sizing: border-box;
+    }
+    .plan-list {
+      box-sizing: border-box;
+    }
+  }
+}
