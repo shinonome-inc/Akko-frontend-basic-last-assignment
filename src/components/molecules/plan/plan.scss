@@ -1,10 +1,6 @@
 @use "../../variables" as *;
 .plan-wrap {
-  display: flex;
-  flex-direction: column;
   .plan {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     @media screen and (max-width: $breakpoint-md) {
       margin-bottom: 24px;
