@@ -1,6 +1,6 @@
-import Item_Plan from "../components/organisms/plan/plan.html";
-import "../components/organisms/plan/plan.scss";
+import Item_News from "../components/organisms/news/news.html";
+import "../components/organisms/news/news.scss";
 
-export default { title: "Organisms/plan" };
+export default { title: "Organisms/News" };
 
-export const Plan = () => Item_Plan;
+export const News = () => Item_News;
