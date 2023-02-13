@@ -1,80 +1,46 @@
 @use "../../variables" as *;
 
-.news {
-  p {
-    margin: 0;
-  }
-  .news-and-events-title {
-    & > h2 {
-      display: flex;
-      align-items: center;
-      font-size: $fontsize-l;
-      font-family: $fontfamily-mincho;
-      margin-bottom: 32px;
+p {
+  margin: 0;
+}
+.news-article-wrap {
+  border: 1px solid $gray_gainsboro;
+  margin-bottom: 30px;
+  article {
+    padding: 20px;
+    border-bottom: 1px solid $gray_gainsboro;
+    box-sizing: border-box;
+    height: 80.5px;
 
-      @media (min-width: $breakpoint-lg) {
-        font-size: $fontsize-xxl;
+    .news-link {
+      text-decoration: none;
+      color: $black;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $gray_nobel;
       }
-
-      .caption {
+      .news-date {
+        margin-bottom: 10px;
+        font-size: $fontsize-xs;
+        color: $gray_nobel;
+      }
+      .news-title {
         font-size: $fontsize-m;
-        font-family: $fontfamily-gothic;
-        font-weight: 400;
-        margin-left: 16px;
+        line-height: 23px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
       }
     }
-  }
-  .news-article-wrap {
-    .news-article {
-      padding: 20px;
-      border: 1px solid $gray_gainsboro;
-      border-bottom: none;
-      box-sizing: border-box;
 
-      .news-link {
-        text-decoration: none;
-        color: $black;
-        transition: color 0.2s ease;
-
-        &:hover {
-          color: $gray_nobel;
-        }
-        .news-date {
-          margin-bottom: 10px;
-          font-size: $fontsize-xs;
-          color: $gray_nobel;
-        }
-        .news-title {
-          font-size: $fontsize-m;
-          line-height: 23px;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
-        }
-      }
-
-      &:last-child {
-        border-bottom: 1px solid $gray_gainsboro;
-      }
+    &:last-child {
+      border: none;
     }
   }
+}
 
-  .news-and-events-more {
-    cursor: pointer;
-    color: $black;
-    text-decoration: none;
-    font-size: $fontsize-s;
-    transition: color 0.2s ease;
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    margin-top: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-
-    &:hover {
-      color: $gray_nobel;
-    }
-  }
+.news-and-events-more {
+  display: flex;
+  justify-content: flex-end;
 }
